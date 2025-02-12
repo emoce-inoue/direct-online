@@ -24,7 +24,9 @@
 .js-scroll-in.is-inview {
   opacity: 1;
   translate: 0;
-  transition: opacity .7s ease, translate .7s ease;
+  transition:
+    opacity 0.7s ease,
+    translate 0.7s ease;
 }
 
 .animation-delay-normal {
@@ -43,31 +45,31 @@
 }
 
 .l-sticky-button__heading-text {
-  animation: modalBtnHeading 3.5s ease-out 5s infinite;
+  animation: modalbtnheading 3.5s ease-out 5s infinite;
 }
 
 .l-money__figure-track-arrow-elm--top:nth-of-type(1) {
-  animation: trackArrow1 2.8s steps(1) infinite
+  animation: trackarrow1 2.8s steps(1) infinite;
 }
 
 .l-money__figure-track-arrow-elm--top:nth-of-type(2) {
-  animation: trackArrow2 2.8s steps(1) infinite
+  animation: trackarrow2 2.8s steps(1) infinite;
 }
 
 .l-money__figure-track-arrow-elm--bottom:nth-of-type(2) {
-  animation: trackArrow1 2.8s steps(1) infinite
+  animation: trackarrow1 2.8s steps(1) infinite;
 }
 
 .l-money__figure-track-arrow-elm--bottom:nth-of-type(1) {
-  animation: trackArrow2 2.8s steps(1) infinite
+  animation: trackarrow2 2.8s steps(1) infinite;
 }
 
 .l-hero__pop-text {
-  animation: textShine 4s ease-out .5s infinite;
+  animation: textshine 4s ease-out 0.5s infinite;
 }
 
 .l-hero__message-text-sub-large {
-  animation: textShine 4s ease-out .5s infinite;
+  animation: textshine 4s ease-out 0.5s infinite;
 }
 
 @keyframes fade {
@@ -112,47 +114,57 @@
   }
 }
 
-@keyframes modalBtnHeading {
+@keyframes modalbtnheading {
   0% {
     clip-path: inset(0 100% 0 0);
     opacity: 1;
   }
+
   30% {
     clip-path: inset(0);
     opacity: 1;
   }
+
   96% {
     clip-path: inset(0);
     opacity: 1;
   }
+
   100% {
-    opacity: 0; 
+    opacity: 0;
   }
 }
 
-@keyframes trackArrow1 {
-  0%, 12% {
+@keyframes trackarrow1 {
+  0%,
+  12% {
     opacity: 0;
-  } 
-  100%, 37% {
+  }
+
+  100%,
+  37% {
     opacity: 1;
   }
 }
 
-@keyframes trackArrow2 {
-  0%, 32% {
+@keyframes trackarrow2 {
+  0%,
+  32% {
     opacity: 0;
   }
-  100%, 57% {
+
+  100%,
+  57% {
     opacity: 1;
   }
 }
 
-@keyframes textShine {
-	0% {
-		background-position: 100% 50%;
-	}
-	30% {
-		background-position: 0% 50%;
-	}
+@keyframes textshine {
+  0% {
+    background-position: 100% 50%;
+  }
+  
+  30% {
+    background-position: 0% 50%;
+  }
 }

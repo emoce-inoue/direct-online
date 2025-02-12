@@ -3,14 +3,14 @@ const windowValues = {
   winW: window.innerWidth,
   winH: window.innerHeight,
   body: document.querySelector('.l-body'),
-  swiper: null
-}
+  swiper: null,
+};
 
 const getWindowValue = () => {
   windowValues.winW = window.innerWidth;
   windowValues.winH = window.innerHeight;
   windowValues.winTop = window.pageYOffset || document.documentElement.scrollTop;
-}
+};
 
 const triggerStickyButton = () => {
   const stickyBtn = document.querySelector('.l-sticky-button');
@@ -19,12 +19,12 @@ const triggerStickyButton = () => {
   const endContent = document.querySelector('.l-footer');
   const endTop = endContent.getBoundingClientRect().top + windowValues.winTop;
 
-  if (startTop <= windowValues.winTop + windowValues.winH*4/6 && endTop >= windowValues.winTop + windowValues.winH) {
+  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6 && endTop >= windowValues.winTop + windowValues.winH) {
     stickyBtn.classList.add('l-sticky-button--show');
   } else {
     stickyBtn.classList.remove('l-sticky-button--show');
   }
-}
+};
 
 const setSlider = () => {
   if (window.Swiper) {
@@ -56,13 +56,13 @@ const triggerModal = () => {
 };
 
 const toggleYesNoContent = () => {
-  const iryoBtns = document.querySelectorAll('.c-detail-btn--iryo');
+  const iryoBtns = document.querySelectorAll('.c-detail-button--iryo');
   const iryoContents = document.querySelectorAll('.l-iryo-detail');
 
   let lastClickedButton = null;
 
   const toggleContent = (targetContent) => {
-    iryoContents.forEach(iryoContent => {
+    iryoContents.forEach((iryoContent) => {
       iryoContent.classList.remove('l-iryo-detail--open');
     });
 
@@ -72,37 +72,37 @@ const toggleYesNoContent = () => {
   };
 
   const toggleBtnClasses = (addBtn) => {
-    const addBtnBox = addBtn.querySelector('.c-detail-btn__box');
-    const addBtnText = addBtn.querySelector('.c-detail-btn__box-text');
+    const addBtnBox = addBtn.querySelector('.c-detail-button__box');
+    const addBtnText = addBtn.querySelector('.c-detail-button__box-text');
 
     if (addBtnBox) {
-      addBtnBox.classList.add('c-detail-btn__box--open');
+      addBtnBox.classList.add('c-detail-button__box--open');
     }
 
     if (addBtnText) {
-      addBtnText.classList.add('c-detail-btn__box-text--open');
+      addBtnText.classList.add('c-detail-button__box-text--open');
     }
   };
 
   const removeBtnClasses = (removeBtn) => {
-    const removeBtnBox = removeBtn.querySelector('.c-detail-btn__box');
-    const removeBtnText = removeBtn.querySelector('.c-detail-btn__box-text');
+    const removeBtnBox = removeBtn.querySelector('.c-detail-button__box');
+    const removeBtnText = removeBtn.querySelector('.c-detail-button__box-text');
 
     if (removeBtnBox) {
-      removeBtnBox.classList.remove('c-detail-btn__box--open');
+      removeBtnBox.classList.remove('c-detail-button__box--open');
     }
 
     if (removeBtnText) {
-      removeBtnText.classList.remove('c-detail-btn__box-text--open');
+      removeBtnText.classList.remove('c-detail-button__box-text--open');
     }
-  }
+  };
 
-  iryoBtns.forEach(iryoBtn => {
+  iryoBtns.forEach((iryoBtn) => {
     iryoBtn.addEventListener('click', (event) => {
-      const target = event.target.closest('.c-detail-btn--iryo').dataset.target;
+      const target = event.target.closest('.c-detail-button--iryo').dataset.target;
 
       const targetContent = document.querySelector(`.l-iryo-detail[data-content="${target}"]`);
-      const clickedButton = event.target.closest('.c-detail-btn--iryo');
+      const clickedButton = event.target.closest('.c-detail-button--iryo');
 
       if (lastClickedButton && lastClickedButton !== clickedButton) {
         removeBtnClasses(lastClickedButton);
@@ -124,15 +124,15 @@ const toggleYesNoContent = () => {
 };
 
 const toggleGanHoken = () => {
-  const ganBtn = document.querySelector('.c-detail-btn--gan');
+  const ganBtn = document.querySelector('.c-detail-button--gan');
   const ganContent = document.querySelector('.l-gan-hoken__detail');
-  const ganBtnBox = ganBtn.querySelector('.c-detail-btn__box');
-  const ganBtnText = ganBtn.querySelector('.c-detail-btn__box-text');
+  const ganBtnBox = ganBtn.querySelector('.c-detail-button__box');
+  const ganBtnText = ganBtn.querySelector('.c-detail-button__box-text');
 
   ganBtn.addEventListener('click', () => {
     ganContent.classList.toggle('l-gan-hoken__detail--open');
-    ganBtnBox.classList.toggle('c-detail-btn__box--open');
-    ganBtnText.classList.toggle('c-detail-btn__box-text--open');
+    ganBtnBox.classList.toggle('c-detail-button__box--open');
+    ganBtnText.classList.toggle('c-detail-button__box-text--open');
   });
 };
 
@@ -149,7 +149,7 @@ window.addEventListener('load', () => {
   windowValues.body.classList.add('l-body--loaded');
   setTimeout(() => {
     if (windowValues.swiper) {
-      windowValues.swiper.params.autoplay.delay = 0; 
+      windowValues.swiper.params.autoplay.delay = 0;
       windowValues.swiper.params.autoplay.disableOnInteraction = false;
       windowValues.swiper.autoplay.start();
     }

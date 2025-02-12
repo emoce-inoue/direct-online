@@ -72,7 +72,7 @@
   --color-bluescale-200: #002769;
   --background-base: var(--color-grayscale-0);
   --background-main: repeating-linear-gradient(-45deg, var(--color-yellowscale-200), var(--color-yellowscale-200) 5px, var(--color-yellowscale-100) 5px, var(--color-yellowscale-100) 10px);
-  --background-hero: linear-gradient(0deg, var(--background-base), var( --color-grayscale-50));
+  --background-hero: linear-gradient(0deg, var(--background-base), var(--color-grayscale-50));
   --background-pop: linear-gradient(135deg, var(--color-bluescale-75), var(--color-bluescale-60) 50%, var(--color-bluescale-30));
   --background-gray: var(--color-grayscale-50);
   --background-modal: rgb(0 0 0 / 25%);
@@ -85,7 +85,7 @@
   --font-modal: var(--color-grayscale-900);
   --blue-link: var(--color-bluescale-80);
   --blue-borderline: var(--color-bluescale-100);
-  --blue-background-slider: var(--color-bluescale-40); 
+  --blue-background-slider: var(--color-bluescale-40);
   --blue-background-tab-left: var(--color-bluescale-35);
   --blue-background-tab-right: var(--color-bluescale-70);
   --blue-gradation: linear-gradient(90deg, var(--color-bluescale-75), var(--color-bluescale-60) 71%, var(--color-bluescale-30));
@@ -96,6 +96,7 @@
   --blue-graph-medium: var(--color-bluescale-50);
   --blue-graph-large: var(--color-bluescale-65);
   --blue-text-shadow: var(--color-bluescale-55);
+  --blue-button-shadow: 1px 1px 0 var(--blue-text-shadow), -1px 1px 0 var(--blue-text-shadow), 1px -1px 0 var(--blue-text-shadow), -1px -1px 0 var(--blue-text-shadow), 1px 0 0 var(--blue-text-shadow), 0 1px 0 var(--blue-text-shadow), -1px 0 0 var(--blue-text-shadow), 0 -1px 0 var(--blue-text-shadow);
   --black-box-shadow: 2px 2px 2px rgb(78 77 77 / 25%);
   --black-graph-shadow: 2px 4px 2px rgb(0 0 0 / 25%);
 
@@ -112,4 +113,3 @@
   --speed-slow: 1s;
   --speed-over-slow: 2s;
 }
- 
