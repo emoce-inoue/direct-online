@@ -124,7 +124,7 @@
 .c-detail-button__box-text {
   background-image: var(--blue-gradation);
   background-clip: text;
-  
+
   /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   font-weight: var(--font-medium);
@@ -144,17 +144,19 @@
     transition: background 0.3s ease;
   }
 
-  .c-detail-button:hover .c-detail-button__box {
-    cursor: pointer;
-    background-color: transparent;
-  }
-
   .c-detail-button__box-text {
     transition:
       background 0.3s ease,
       text-shadow 0.3s ease;
   }
+}
 
+@media (any-hover: hover) {
+  .c-detail-button:hover .c-detail-button__box {
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
   .c-detail-button:hover .c-detail-button__box-text {
     background-image: var(--background-base);
     -webkit-text-fill-color: var(--background-base);

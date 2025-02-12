@@ -83,6 +83,7 @@
   --font-blue-light: var(--color-bluescale-70);
   --font-blue-dark: var(--color-bluescale-85);
   --font-modal: var(--color-grayscale-900);
+  --font-linear: linear-gradient(130deg, var(--font-white) 2%, var(--color-bluescale-10) 47%, var(--font-white) 51%, var(--color-bluescale-10) 56%);
   --blue-link: var(--color-bluescale-80);
   --blue-borderline: var(--color-bluescale-100);
   --blue-background-slider: var(--color-bluescale-40);

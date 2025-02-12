@@ -44,34 +44,6 @@
   animation-delay: var(--speed-over-slow) !important;
 }
 
-.l-sticky-button__heading-text {
-  animation: modalbtnheading 3.5s ease-out 5s infinite;
-}
-
-.l-money__figure-track-arrow-elm--top:nth-of-type(1) {
-  animation: trackarrow1 2.8s steps(1) infinite;
-}
-
-.l-money__figure-track-arrow-elm--top:nth-of-type(2) {
-  animation: trackarrow2 2.8s steps(1) infinite;
-}
-
-.l-money__figure-track-arrow-elm--bottom:nth-of-type(2) {
-  animation: trackarrow1 2.8s steps(1) infinite;
-}
-
-.l-money__figure-track-arrow-elm--bottom:nth-of-type(1) {
-  animation: trackarrow2 2.8s steps(1) infinite;
-}
-
-.l-hero__pop-text {
-  animation: textshine 4s ease-out 0.5s infinite;
-}
-
-.l-hero__message-text-sub-large {
-  animation: textshine 4s ease-out 0.5s infinite;
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -120,12 +92,7 @@
     opacity: 1;
   }
 
-  30% {
-    clip-path: inset(0);
-    opacity: 1;
-  }
-
-  96% {
+  30%, 96% {
     clip-path: inset(0);
     opacity: 1;
   }
@@ -136,25 +103,21 @@
 }
 
 @keyframes trackarrow1 {
-  0%,
-  12% {
+  0% {
     opacity: 0;
   }
 
-  100%,
-  37% {
+  30%, 100% {
     opacity: 1;
   }
 }
 
 @keyframes trackarrow2 {
-  0%,
-  32% {
+  0% {
     opacity: 0;
   }
 
-  100%,
-  57% {
+  50%, 100% {
     opacity: 1;
   }
 }
@@ -163,8 +126,8 @@
   0% {
     background-position: 100% 50%;
   }
-  
+
   30% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }

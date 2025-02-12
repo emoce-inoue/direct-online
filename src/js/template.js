@@ -42,17 +42,18 @@ const triggerModal = () => {
   const openBtn = document.querySelector('.js-modal-button');
   const modal = document.querySelector('.l-modal');
 
-  openBtn.addEventListener('click', () => {
-    modal.classList.add('l-modal--open');
-    windowValues.body.classList.add('l-body--noscroll');
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (!e.target.closest('.l-modal__content')) {
-      modal.classList.remove('l-modal--open');
-      windowValues.body.classList.remove('l-body--noscroll');
-    }
-  });
+  if (openBtn) {
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('l-modal--open');
+      windowValues.body.classList.add('l-body--noscroll');
+    });
+    modal.addEventListener('click', (e) => {
+      if (!e.target.closest('.l-modal__content')) {
+        modal.classList.remove('l-modal--open');
+        windowValues.body.classList.remove('l-body--noscroll');
+      }
+    });
+  }
 };
 
 const toggleYesNoContent = () => {
