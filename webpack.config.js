@@ -23,7 +23,7 @@ const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
     chunks,
     scriptLoading: 'module',
     minify: false,
-    publicPath: '/direct-online/',
+    publicPath: '../',
   });
 });
 
@@ -40,7 +40,7 @@ module.exports = {
     },
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/direct-online/',
+    publicPath: '../',
   },
   devServer: {
     static: {
