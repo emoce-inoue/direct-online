@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1,
   };
   const defaultObserver = new IntersectionObserver(observerCallback, defaultObserverOptions);
-  const targetElements = document.querySelectorAll('.js-fade, .js-fadeup, .js-fadein');
+  const targetElements = document.querySelectorAll('.js-fade, .js-fadeup, .js-fadein, .js-scroll-in, .js-anim');
   targetElements.forEach((target) => {
     defaultObserver.observe(target);
   });

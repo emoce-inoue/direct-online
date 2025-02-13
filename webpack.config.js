@@ -11,9 +11,9 @@ const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
   let outputFilename;
   let chunks;
 
-  if (filename === 'lp1/index.html') {
-    outputFilename = 'lp1/index.html';
-    chunks = ['lp1'];
+  if (filename === 'template/index.html') {
+    outputFilename = 'template/index.html';
+    chunks = ['template'];
   }
 
   return new HtmlWebpackPlugin({
@@ -29,12 +29,12 @@ const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
 module.exports = {
   mode: 'production',
   entry: {
-    lp1: ['./src/js/utils.js', './src/js/lp1.js', './src/css/lp1.css'],
+    template: ['./src/js/utils.js', './src/js/template.js', './src/css/template.css'],
   },
   output: {
     filename: (pathData) => {
-      if (pathData.chunk.name === 'lp1') {
-        return 'lp1/js/[name].bundle.js';
+      if (pathData.chunk.name === 'template') {
+        return 'template/js/[name].bundle.js';
       }
     },
     path: path.resolve(__dirname, 'dist'),
@@ -84,8 +84,8 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: ({ chunk }) => {
-        if (chunk.name === 'lp1') {
-          return 'lp1/css/[name].css';
+        if (chunk.name === 'template') {
+          return 'template/css/[name].css';
         }
       },
     }),
