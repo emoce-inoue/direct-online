@@ -23,6 +23,7 @@ const htmlPlugins = glob.sync('./src/**/*.html').map((file) => {
     chunks,
     scriptLoading: 'module',
     minify: false,
+    publicPath: '/direct-online/',
   });
 });
 
@@ -39,6 +40,7 @@ module.exports = {
     },
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/direct-online/',
   },
   devServer: {
     static: {
@@ -91,7 +93,7 @@ module.exports = {
     }),
     ...htmlPlugins,
     new CopyWebpackPlugin({
-      patterns: [{ from: 'src/images', to: 'images' }],
+      patterns: [{ from: 'src/images', to: 'dist/images' }],
     }),
   ],
 };
