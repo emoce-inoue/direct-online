@@ -1,15 +1,15 @@
 const windowValues = {
-  winTop: 0,
-  winW: window.innerWidth,
-  winH: window.innerHeight,
+  get winTop() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+  },
+  get winW() {
+    return window.innerWidth;
+  },
+  get winH() {
+    return window.innerHeight;
+  },
   body: document.querySelector('.l-body'),
   swiper: null,
-};
-
-const getWindowValue = () => {
-  windowValues.winW = window.innerWidth;
-  windowValues.winH = window.innerHeight;
-  windowValues.winTop = window.pageYOffset || document.documentElement.scrollTop;
 };
 
 const triggerStickyButton = () => {
@@ -138,7 +138,6 @@ const toggleGanHoken = () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  getWindowValue();
   triggerModal();
   toggleYesNoContent();
   toggleGanHoken();
@@ -158,6 +157,5 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('scroll', () => {
-  getWindowValue();
   triggerStickyButton();
 });

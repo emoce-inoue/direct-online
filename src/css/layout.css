@@ -79,7 +79,7 @@
   inset-inline: 0;
   inline-size: calc((213 / 225) * 100%);
   margin: auto;
-  animation: modalbtnheading 3.5s ease-out 5s infinite;
+  animation: modalbtnheading 3.8s ease-out 5s infinite;
 }
 
 .l-content {
@@ -281,7 +281,7 @@
   color: var(--font-white);
 }
 
-.l-hero__messaeg_text-main-small {
+.l-hero__message_text-main-small {
   font-size: calc(40 / var(--base-width) * 100vw);
 }
 
@@ -296,7 +296,7 @@
 
 .l-hero__link-button {
   text-decoration: underline;
-} 
+}
 
 .l-iryo-hoken {
   margin-block-start: 8px;
@@ -1438,7 +1438,7 @@
     font-size: calc(17 * var(--rem-ratio));
   }
 
-  .l-hero__messaeg_text-main-small {
+  .l-hero__message_text-main-small {
     font-size: calc(32 * var(--rem-ratio));
   }
 

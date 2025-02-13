@@ -92,7 +92,8 @@
     opacity: 1;
   }
 
-  30%, 96% {
+  30%,
+  96% {
     clip-path: inset(0);
     opacity: 1;
   }
@@ -107,7 +108,7 @@
     opacity: 0;
   }
 
-  30%, 100% {
+  30% {
     opacity: 1;
   }
 }
@@ -117,7 +118,7 @@
     opacity: 0;
   }
 
-  50%, 100% {
+  50% {
     opacity: 1;
   }
 }

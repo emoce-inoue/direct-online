@@ -156,7 +156,7 @@
     cursor: pointer;
     background-color: transparent;
   }
-  
+
   .c-detail-button:hover .c-detail-button__box-text {
     background-image: var(--background-base);
     -webkit-text-fill-color: var(--background-base);
