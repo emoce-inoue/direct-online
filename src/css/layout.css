@@ -281,7 +281,7 @@
   color: var(--font-white);
 }
 
-.l-hero__message_text-main-small {
+.l-hero__message-text-main-small {
   font-size: calc(40 / var(--base-width) * 100vw);
 }
 
@@ -1438,7 +1438,7 @@
     font-size: calc(17 * var(--rem-ratio));
   }
 
-  .l-hero__message_text-main-small {
+  .l-hero__message-text-main-small {
     font-size: calc(32 * var(--rem-ratio));
   }
 
