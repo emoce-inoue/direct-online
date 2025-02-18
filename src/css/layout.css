@@ -251,7 +251,7 @@
   inset-inline-start: calc(136 / var(--base-width) * 100%);
   margin-block-start: calc(98 / var(--base-width) * 100%);
   line-height: var(--leading-tight);
-  filter: drop-shadow(1px 1.5px 2px var(--blue-shine-shadow));;
+  filter: drop-shadow(1px 1.5px 2px var(--blue-shine-shadow));
 }
 
 .l-hero__message-text-sub {

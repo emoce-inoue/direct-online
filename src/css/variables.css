@@ -68,7 +68,7 @@
   --color-bluescale-75: #0089d4;
   --color-bluescale-80: #0189d4;
   --color-bluescale-85: #028cd6;
-  --color-bluescale-90: rgb(49 146 183 / 1);
+  --color-bluescale-90: rgb(49 146 183 / 100%);
   --color-bluescale-100: #076fa9;
   --color-bluescale-200: #002769;
   --background-base: var(--color-grayscale-0);
