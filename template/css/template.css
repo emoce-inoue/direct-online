@@ -68,6 +68,7 @@
   --color-bluescale-75: #0089d4;
   --color-bluescale-80: #0189d4;
   --color-bluescale-85: #028cd6;
+  --color-bluescale-90: rgb(49 146 183 / 100%);
   --color-bluescale-100: #076fa9;
   --color-bluescale-200: #002769;
   --background-base: var(--color-grayscale-0);
@@ -97,6 +98,7 @@
   --blue-graph-medium: var(--color-bluescale-50);
   --blue-graph-large: var(--color-bluescale-65);
   --blue-text-shadow: var(--color-bluescale-55);
+  --blue-shine-shadow: var(--color-bluescale-90);
   --blue-button-shadow: 1px 1px 0 var(--blue-text-shadow), -1px 1px 0 var(--blue-text-shadow), 1px -1px 0 var(--blue-text-shadow), -1px -1px 0 var(--blue-text-shadow), 1px 0 0 var(--blue-text-shadow), 0 1px 0 var(--blue-text-shadow), -1px 0 0 var(--blue-text-shadow), 0 -1px 0 var(--blue-text-shadow);
   --black-box-shadow: 2px 2px 2px rgb(78 77 77 / 25%);
   --black-graph-shadow: 2px 4px 2px rgb(0 0 0 / 25%);
@@ -558,19 +560,18 @@ summary::-webkit-details-marker {
   background-clip: text;
   text-align: center;
   color: transparent;
+  filter: drop-shadow(1px 1px 1px var(--blue-shine-shadow));
   animation: textshine 4s ease-out 0.5s infinite;
 }
 
 .l-hero__pop-date {
   font-family: var(--font-sans);
-  font-weight: var(--font-normal);
   font-size: calc(18 / var(--base-width) * 100vw);
 }
 
 .l-hero__pop-fukidashi {
   margin-block-start: -3px;
   font-family: var(--font-sans);
-  font-weight: var(--font-normal);
   font-size: calc(30 / var(--base-width) * 100vw);
   line-height: var(--leading-tight);
 }
@@ -620,6 +621,7 @@ summary::-webkit-details-marker {
   inset-inline-start: calc(136 / var(--base-width) * 100%);
   margin-block-start: calc(98 / var(--base-width) * 100%);
   line-height: var(--leading-tight);
+  filter: drop-shadow(1px 1.5px 2px var(--blue-shine-shadow));
 }
 
 .l-hero__message-text-sub {
@@ -630,13 +632,16 @@ summary::-webkit-details-marker {
   text-align: center;
 }
 
-.l-hero__message-text-sub-large {
-  font-size: calc(56 / var(--base-width) * 100vw);
+.l-hero__message-text-sub-kirakira {
   background-image: var(--font-linear);
   background-size: 230% 100%;
   background-clip: text;
   color: transparent;
   animation: textshine 4s ease-out 0.5s infinite;
+}
+
+.l-hero__message-text-sub-large {
+  font-size: calc(56 / var(--base-width) * 100vw);
 }
 
 .l-hero__message-text-sub-small {
