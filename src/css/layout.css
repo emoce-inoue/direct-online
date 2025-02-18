@@ -190,19 +190,18 @@
   background-clip: text;
   text-align: center;
   color: transparent;
+  filter: drop-shadow(1px 1px 1px var(--blue-shine-shadow));
   animation: textshine 4s ease-out 0.5s infinite;
 }
 
 .l-hero__pop-date {
   font-family: var(--font-sans);
-  font-weight: var(--font-normal);
   font-size: calc(18 / var(--base-width) * 100vw);
 }
 
 .l-hero__pop-fukidashi {
   margin-block-start: -3px;
   font-family: var(--font-sans);
-  font-weight: var(--font-normal);
   font-size: calc(30 / var(--base-width) * 100vw);
   line-height: var(--leading-tight);
 }
@@ -252,6 +251,7 @@
   inset-inline-start: calc(136 / var(--base-width) * 100%);
   margin-block-start: calc(98 / var(--base-width) * 100%);
   line-height: var(--leading-tight);
+  filter: drop-shadow(1px 1.5px 2px var(--blue-shine-shadow));;
 }
 
 .l-hero__message-text-sub {
@@ -262,13 +262,16 @@
   text-align: center;
 }
 
-.l-hero__message-text-sub-large {
-  font-size: calc(56 / var(--base-width) * 100vw);
+.l-hero__message-text-sub-kirakira {
   background-image: var(--font-linear);
   background-size: 230% 100%;
   background-clip: text;
   color: transparent;
   animation: textshine 4s ease-out 0.5s infinite;
+}
+
+.l-hero__message-text-sub-large {
+  font-size: calc(56 / var(--base-width) * 100vw);
 }
 
 .l-hero__message-text-sub-small {
