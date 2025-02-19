@@ -40,17 +40,41 @@ const setSlider = () => {
 
 const triggerModal = () => {
   const openBtn = document.querySelector('.js-modal-button');
-  const modal = document.querySelector('.l-modal');
+  const modal = document.querySelector('#modal');
+  const closeBtn = document.querySelector('#closeModalButton');
+  let previousFocus;
+
+  const closeModal = () => {
+    modal.classList.remove('l-modal--open');
+    modal.setAttribute('aria-hidden', 'true');
+    windowValues.body.classList.remove('l-body--noscroll');
+
+    if (previousFocus) {
+      previousFocus.focus();
+    }
+  };
 
   if (openBtn) {
     openBtn.addEventListener('click', () => {
       modal.classList.add('l-modal--open');
+      modal.setAttribute('aria-hidden', 'false');
       windowValues.body.classList.add('l-body--noscroll');
+
+      previousFocus = document.activeElement;
+      closeBtn.focus();
     });
+
     modal.addEventListener('click', (e) => {
-      if (!e.target.closest('.l-modal__content')) {
-        modal.classList.remove('l-modal--open');
-        windowValues.body.classList.remove('l-body--noscroll');
+      if (!e.target.closest('.l-modal__content') && !e.target.closest('.l-modal__close')) {
+        closeModal();
+      }
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
       }
     });
   }

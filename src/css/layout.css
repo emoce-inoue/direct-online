@@ -836,7 +836,7 @@
 .l-money__figure-track-arrow--top {
   inset-block-start: 0;
   inset-inline-start: calc((340 / 594) * 100%);
-  margin-block-start: calc((-10 / 594) * 100%);
+  margin-block-start: calc((-9 / 594) * 100%);
 }
 
 .l-money__figure-track-arrow--bottom {
@@ -964,7 +964,7 @@
 .l-line-graph__rate-circle {
   position: absolute;
   inset-inline-start: 0;
-  inline-size: calc(10 / var(--base-width) * 100vw);
+  inline-size: 1.36vw;
   aspect-ratio: 1/1;
   background-color: var(--font-pink);
   border-radius: var(--rounded-full);
@@ -1118,7 +1118,7 @@
 }
 
 .l-line-graph__rate-line--line7 {
-  inset-inline-start: calc((454 / 567) * 100%);
+  inset-inline-start: calc((453 / 567) * 100%);
   margin-block-start: calc((53 / 567) * 100%);
   rotate: 2deg;
 }
@@ -1490,7 +1490,7 @@
   }
 
   .l-line-graph__rate-circle {
-    inline-size: 7.7px;
+    inline-size: 7.85px;
   }
 
   .l-line-graph__rate-line {
