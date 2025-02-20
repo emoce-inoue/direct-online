@@ -89,17 +89,10 @@
 @keyframes modalbtnheading {
   0% {
     clip-path: inset(0 100% 0 0);
-    opacity: 1;
   }
 
-  30%,
-  96% {
+  30% {
     clip-path: inset(0);
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
