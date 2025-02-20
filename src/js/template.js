@@ -40,8 +40,8 @@ const setSlider = () => {
 
 const triggerModal = () => {
   const openBtn = document.querySelector('.js-modal-button');
-  const modal = document.querySelector('#modal');
-  const closeBtn = document.querySelector('#closeModalButton');
+  const modal = document.getElementById('modal');
+  const closeBtn = document.getElementById('closeModalButton');
   let previousFocus;
 
   const closeModal = () => {
@@ -64,16 +64,16 @@ const triggerModal = () => {
       closeBtn.focus();
     });
 
-    modal.addEventListener('click', (e) => {
-      if (!e.target.closest('.l-modal__content') && !e.target.closest('.l-modal__close')) {
+    modal.addEventListener('click', (element) => {
+      if (!element.target.closest('.l-modal__content') && !element.target.closest('.l-modal__close')) {
         closeModal();
       }
     });
 
     closeBtn.addEventListener('click', closeModal);
 
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
+    window.addEventListener('keydown', (element) => {
+      if (element.key === 'Escape') {
         closeModal();
       }
     });
