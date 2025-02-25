@@ -79,7 +79,6 @@
   inset-inline: 0;
   inline-size: calc((213 / 225) * 100%);
   margin: auto;
-  animation: modalbtnheading 3.8s ease-out 5s infinite;
 }
 
 .l-content {
@@ -398,7 +397,7 @@
 }
 
 .l-detail-content__inner {
-  padding-block: calc(68px / 2) calc(50px / 2);
+  padding-block-start: calc(68px / 2);
   background-color: var(--background-base);
   border-radius: var(--rounded-9);
 }
@@ -905,7 +904,10 @@
 .l-gan-tsuin {
   position: relative;
   margin-block-start: calc(75 / var(--inner-width) * 100%);
+  padding-block-end: calc(50px / 2);
   background-color: var(--background-gray);
+  border-bottom-left-radius: var(--rounded-sl);
+  border-bottom-right-radius: var(--rounded-sl);
 }
 
 .l-gan__tsuin-heading {
@@ -1336,6 +1338,7 @@
   inline-size: calc((590 / 670) * 100%);
   margin: 15px auto 0;
   padding-block: 6px 10px;
+  background-color: var(--background-base);
   border: 1px solid var(--blue-line);
   border-radius: var(--rounded-9);
   color: var(--font-modal);
@@ -1346,12 +1349,12 @@
   line-height: var(--leading-tight);
 }
 
-.l-modal__profile-name::after {
+.l-modal__profile-name-line {
   content: '';
   display: block;
   inline-size: calc((276 / 590) * 100%);
-  margin: 4px auto 0;
-  border: 1px dashed var(--blue-line);
+  block-size: auto;
+  margin: 6px auto 0;
 }
 
 .l-modal__profile-name-en {
@@ -1370,7 +1373,8 @@
   padding-inline: calc((26 / 590) * 100%);
   font-size: calc(14 * var(--rem-ratio));
   font-weight: var(--font-normal);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-snug);
+  text-align: justify;
 }
 
 @media screen and (min-width: 768px) {

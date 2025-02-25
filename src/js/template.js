@@ -16,10 +16,8 @@ const triggerStickyButton = () => {
   const stickyBtn = document.querySelector('.l-sticky-button');
   const startContent = document.querySelector('.l-iryo-hoken');
   const startTop = startContent.getBoundingClientRect().top + windowValues.winTop;
-  const endContent = document.querySelector('.l-footer');
-  const endTop = endContent.getBoundingClientRect().top + windowValues.winTop;
 
-  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6 && endTop >= windowValues.winTop + windowValues.winH) {
+  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6) {
     stickyBtn.classList.add('l-sticky-button--show');
   } else {
     stickyBtn.classList.remove('l-sticky-button--show');
