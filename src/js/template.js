@@ -19,7 +19,7 @@ const triggerStickyButton = () => {
   const endContent = document.querySelector('.l-footer');
   const endTop = endContent.getBoundingClientRect().top + windowValues.winTop;
 
-  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6 && endTop >= windowValues.winTop + windowValues.winH) {
+  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6) {
     stickyBtn.classList.add('l-sticky-button--show');
   } else {
     stickyBtn.classList.remove('l-sticky-button--show');

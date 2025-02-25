@@ -86,16 +86,6 @@
   }
 }
 
-@keyframes modalbtnheading {
-  0% {
-    clip-path: inset(0 100% 0 0);
-  }
-
-  30% {
-    clip-path: inset(0);
-  }
-}
-
 @keyframes trackarrow1 {
   0% {
     opacity: 0;
