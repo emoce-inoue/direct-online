@@ -1173,8 +1173,6 @@
   position: relative;
   padding-block: 50px 45px;
   background-color: var(--background-base);
-
-  /* background-color: var(--background-gray); */
 }
 
 .l-interview__icon {
