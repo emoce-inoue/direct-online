@@ -146,18 +146,18 @@ const toggleYesNoContent = () => {
   });
 };
 
-const toggleGanHoken = () => {
-  const ganBtn = document.querySelector('.c-detail-button--gan');
-  const ganContent = document.querySelector('.l-gan-hoken__detail');
-  const ganBtnBox = ganBtn.querySelector('.c-detail-button__box');
-  const ganBtnText = ganBtn.querySelector('.c-detail-button__box-text');
+// const toggleGanHoken = () => {
+//   const ganBtn = document.querySelector('.c-detail-button--gan');
+//   const ganContent = document.querySelector('.l-gan-hoken__detail');
+//   const ganBtnBox = ganBtn.querySelector('.c-detail-button__box');
+//   const ganBtnText = ganBtn.querySelector('.c-detail-button__box-text');
 
-  ganBtn.addEventListener('click', () => {
-    ganContent.classList.toggle('l-gan-hoken__detail--open');
-    ganBtnBox.classList.toggle('c-detail-button__box--open');
-    ganBtnText.classList.toggle('c-detail-button__box-text--open');
-  });
-};
+//   ganBtn.addEventListener('click', () => {
+//     ganContent.classList.toggle('l-gan-hoken__detail--open');
+//     ganBtnBox.classList.toggle('c-detail-button__box--open');
+//     ganBtnText.classList.toggle('c-detail-button__box-text--open');
+//   });
+// };
 
 window.addEventListener('DOMContentLoaded', () => {
   triggerModal();
