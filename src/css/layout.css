@@ -570,10 +570,41 @@
   font-size: calc(34 * var(--rem-ratio));
 }
 
+.l-iryo-detail__banner-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 10px;
+}
+
+.l-iryo-detail__banner-number-col--left {
+  font-size: calc(19 * var(--rem-ratio));
+}
+
+.l-iryo-detail__banner-number-col--right {
+  font-size: calc(20 * var(--rem-ratio));
+  color: var(--font-pink);
+}
+
+.l-iryo-detail__banner-number-strong {
+  font-size: calc(34 * var(--rem-ratio));
+}
+
+.l-iryo-detail__banner-number-color {
+  font-size: calc(40 * var(--rem-ratio));
+  color: var(--font-pink);
+}
+
+.l-iryo-detail__banner-number-arrow {
+  inline-size: calc(18 / var(--base-width) * 100%);
+  margin-inline: calc(38 / var(--inner-width) * 100%) calc(26 / var(--inner-width) * 100%);
+}
+
 .l-support {
   position: relative;
   inline-size: calc(614 / var(--inner-width) * 100%);
-  margin: 13px auto 0;
+  margin: auto;
+  padding-block: 13px 25px;
 }
 
 .l-support__tab {
@@ -1141,7 +1172,7 @@
   z-index: var(--default-z-index);
   position: relative;
   padding-block: 50px 45px;
-  background-color: var(--background-gray);
+  background-color: var(--background-base);
 }
 
 .l-interview__icon {
