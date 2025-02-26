@@ -54,7 +54,7 @@
   z-index: var(--front-z-index);
   position: relative;
   font-size: calc(19 * var(--rem-ratio));
-  line-height: var(--leading-snug);
+  line-height: var(--leading-snug-tight);
   color: var(--font-gray);
   text-align: center;
 }

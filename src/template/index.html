@@ -276,6 +276,14 @@
                   <div class="swiper-slide">
                     <div class="l-company__slider-logo">
                       <picture>
+                        <source srcset="images/webp/logo_pgf.webp" type="image/webp" width="308" height="117" />
+                        <img src="images/logo_pgf.png" alt="PGF生命" width="308" height="117" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="l-company__slider-logo">
+                      <picture>
                         <source srcset="images/webp/logo_yell.webp" type="image/webp" width="308" height="117" />
                         <img src="images/logo_yell.png" alt="エール少額短期保険" width="308" height="117" />
                       </picture>
@@ -705,7 +713,7 @@
               <div class="l-detail-content__inner">
                 <p class="c-detail__heading js-scroll-in">
                   1日あたりの自己負担額<br />
-                  平均<span class="c-detail__heading-color"><span class="c-detail__heading-strongest font-roboto">1</span>万円</span>以上
+                  <span class="c-detail__heading-color"><span class="c-detail__heading-strongest font-roboto">1</span>万円</span>以上が半数以上
                 </p>
                 <div class="l-circle-chart">
                   <div class="l-circle-chart__segment l-circle-chart__segment--no-cover js-anim">
@@ -729,15 +737,27 @@
                 </div>
                 <p class="c-detail-attention js-scroll-in">生命保険文化センター｢令和4年度 生活保障に関する調査」よりFAにて算出※1</p>
                 <div class="l-iryo-detail__banner js-scroll-in">
-                  入院は短期化<br />
-                  平均入院日数は<span class="l-iryo-detail__banner-strong font-roboto">16.1</span>日
+                  平均入院日数は短期化<br />
+                  <div class="l-iryo-detail__banner-number">
+                    <div class="l-iryo-detail__banner-number-col l-iryo-detail__banner-number-col--left">
+                      <span class="l-iryo-detail__banner-number-strong font-roboto">30.4</span>日
+                    </div>
+                    <svg class="l-iryo-detail__banner-number-arrow" viewBox="0 0 18 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18 19.5L0.452206 0.880456L0.452207 38.1195L18 19.5Z" fill="#D9D9D9"/>
+                      <path d="M18 19.5L0.452206 0.880456L0.452207 38.1195L18 19.5Z" fill="#D1F1FE"/>
+                      <path d="M18 19.5L0.452206 0.880456L0.452207 38.1195L18 19.5Z" fill="white"/>
+                    </svg>
+                    <div class="l-iryo-detail__banner-number-col l-iryo-detail__banner-number-col--right">
+                      <span class="l-iryo-detail__banner-number-color font-roboto">16.2</span>日
+                    </div>
+                  </div>
                 </div>
-                <p class="c-detail-attention js-scroll-in">厚生労働省｢令和3年医療施設(動態)調査・病院報告の概要｣より(一般病床の場合)</p>
+                <p class="c-detail-attention js-scroll-in">厚生労働省｢平成12年、令和4年医療施設(動態)調査・病院報告の概要｣より(一般病床の場合)</p>
                 <div class="l-iryo-detail__banner js-scroll-in">
-                  1入院あたりの合計金額<br />
-                  平均入院日数は<span class="l-iryo-detail__banner-strong">19.8</span>日
+                  1入院あたりの自己負担費用<br />
+                  平均<span class="l-iryo-detail__banner-strong">19.8</span>万円
                 </div>
-                <p class="c-detail-attention js-scroll-in">生命保険文化センター｢令和4年度 生活保障に関する調査｣よりFAにて算出※2</p>
+                <p class="c-detail-attention js-scroll-in">生命保険文化センター｢令和4年度 生活保障に関する調査｣よりFAにて算出※1</p>
                 <div class="c-detail-arrow c-detail-arrow--no js-scroll-in">
                   <picture>
                     <source srcset="images/webp/icon_arrow_blue.webp" type="image/webp" width="320" height="70" />
@@ -828,13 +848,11 @@
                 </ul>
               </div>
             </div>
-            <p class="c-detail-attention js-scroll-in">
-              ※1 調査には、治療費・食事代・差額ベッド代に加え、交通費（見舞いに来る家族の交通費を含む）や衣類、日用品などを含む。高額療養費制度を利用した場合は利用後の金額<br />
-              ※2 治療費、食事代、差額ベッド代に加え、交通費(見舞いに来る家族の交通費も含む)や衣類、日用品などを含み、高額療養費制度を利用した場合は利用後の金額
-            </p>
+            <p class="c-detail-attention js-scroll-in">※1 調査には、治療費・食事代・差額ベッド代に加え、交通費（見舞いに来る家族の交通費を含む）や衣類、日用品などを含む。高額療養費制度を利用した場合は利用後の金額</p>
           </div>
         </section>
-        <section class="l-gan-hoken">
+        <!--  社内確認中 -->
+        <!-- <section class="l-gan-hoken">
           <div class="c-section-heading js-scroll-in">
             <p class="c-section-heading__text">がん保険のピッタリは？</p>
             <div class="c-section-heading__line"></div>
@@ -1051,7 +1069,8 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
+        <!-- /社内確認中 -->
         <section class="l-interview">
           <div class="c-section-heading js-scroll-in">
             <p class="c-section-heading__text">オンライン面談の手順</p>

@@ -162,7 +162,7 @@ const toggleGanHoken = () => {
 window.addEventListener('DOMContentLoaded', () => {
   triggerModal();
   toggleYesNoContent();
-  toggleGanHoken();
+  // toggleGanHoken();
   triggerStickyButton();
   setSlider();
 });
