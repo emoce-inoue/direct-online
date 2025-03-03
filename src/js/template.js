@@ -79,69 +79,35 @@ const triggerModal = () => {
 };
 
 const toggleYesNoContent = () => {
-  const iryoBtns = document.querySelectorAll('.c-detail-button--iryo');
-  const iryoContents = document.querySelectorAll('.l-iryo-detail');
-
-  let lastClickedButton = null;
-
-  const toggleContent = (targetContent) => {
-    iryoContents.forEach((iryoContent) => {
-      iryoContent.classList.remove('l-iryo-detail--open');
-    });
-
-    if (targetContent) {
-      targetContent.classList.add('l-iryo-detail--open');
-    }
-  };
-
-  const toggleBtnClasses = (addBtn) => {
-    const addBtnBox = addBtn.querySelector('.c-detail-button__box');
-    const addBtnText = addBtn.querySelector('.c-detail-button__box-text');
-
-    if (addBtnBox) {
-      addBtnBox.classList.add('c-detail-button__box--open');
-    }
-
-    if (addBtnText) {
-      addBtnText.classList.add('c-detail-button__box-text--open');
-    }
-  };
-
-  const removeBtnClasses = (removeBtn) => {
-    const removeBtnBox = removeBtn.querySelector('.c-detail-button__box');
-    const removeBtnText = removeBtn.querySelector('.c-detail-button__box-text');
-
-    if (removeBtnBox) {
-      removeBtnBox.classList.remove('c-detail-button__box--open');
-    }
-
-    if (removeBtnText) {
-      removeBtnText.classList.remove('c-detail-button__box-text--open');
-    }
-  };
+  const iryoBtns = document.querySelectorAll('.js-trigger');
+  const iryoContent = document.querySelectorAll('.l-iryo-detail');
 
   iryoBtns.forEach((iryoBtn) => {
-    iryoBtn.addEventListener('click', (event) => {
-      const target = event.target.closest('.c-detail-button--iryo').dataset.target;
+    iryoBtn.addEventListener('click', () => {
+      const isOpen = iryoBtn.classList.contains('c-yesno__list--open');
+      if (isOpen) {
+        iryoBtn.classList.remove('c-yesno__list--open');
 
-      const targetContent = document.querySelector(`.l-iryo-detail[data-content="${target}"]`);
-      const clickedButton = event.target.closest('.c-detail-button--iryo');
+        iryoContent.forEach((content) => {
+          content.classList.remove('l-iryo-detail--open');
+        });
+      } else {
+        iryoBtns.forEach((btn) => {
+          btn.classList.remove('c-yesno__list--open');
+        });
+        iryoBtn.classList.add('c-yesno__list--open');
 
-      if (lastClickedButton && lastClickedButton !== clickedButton) {
-        removeBtnClasses(lastClickedButton);
-      }
+        const target = iryoBtn.getAttribute('data-target');
 
-      toggleBtnClasses(clickedButton);
+        iryoContent.forEach((content) => {
+          content.classList.remove('l-iryo-detail--open');
+        });
 
-      if (targetContent) {
-        if (targetContent.classList.contains('l-iryo-detail--open')) {
-          targetContent.classList.remove('l-iryo-detail--open');
-          removeBtnClasses(clickedButton);
-        } else {
-          toggleContent(targetContent);
+        const content = document.querySelector(`.l-iryo-detail[data-content="${target}"]`);
+        if (content) {
+          content.classList.add('l-iryo-detail--open');
         }
       }
-      lastClickedButton = clickedButton;
     });
   });
 };
