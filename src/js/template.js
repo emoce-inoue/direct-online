@@ -79,23 +79,26 @@ const triggerModal = () => {
 };
 
 const toggleYesNoContent = () => {
-  document.querySelectorAll('.js-trigger').forEach(button => {
-    button.addEventListener('click', () => {
-      if (button.classList.contains('c-yesno__list--open')) {
-        button.classList.remove('c-yesno__list--open');
+  const iryoBtns = document.querySelectorAll('.js-trigger');
+  const iryoContent = document.querySelectorAll('.l-iryo-detail');
 
-        document.querySelectorAll('.l-iryo-detail').forEach(content => {
+  iryoBtns.forEach((iryoBtn) => {
+    iryoBtn.addEventListener('click', () => {
+      if (iryoBtn.classList.contains('c-yesno__list--open')) {
+        iryoBtn.classList.remove('c-yesno__list--open');
+
+        iryoContent.forEach((content) => {
           content.classList.remove('l-iryo-detail--open');
         });
       } else {
-        document.querySelectorAll('.js-trigger').forEach(btn => {
+        iryoBtns.forEach((btn) => {
           btn.classList.remove('c-yesno__list--open');
         });
-        button.classList.add('c-yesno__list--open');
+        iryoBtn.classList.add('c-yesno__list--open');
 
-        const target = button.getAttribute('data-target');
+        const target = iryoBtn.getAttribute('data-target');
 
-        document.querySelectorAll('.l-iryo-detail').forEach(content => {
+        iryoContent.forEach((content) => {
           content.classList.remove('l-iryo-detail--open');
         });
 
