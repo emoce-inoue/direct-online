@@ -84,7 +84,8 @@ const toggleYesNoContent = () => {
 
   iryoBtns.forEach((iryoBtn) => {
     iryoBtn.addEventListener('click', () => {
-      if (iryoBtn.classList.contains('c-yesno__list--open')) {
+      const isOpen = iryoBtn.classList.contains('c-yesno__list--open');
+      if (isOpen) {
         iryoBtn.classList.remove('c-yesno__list--open');
 
         iryoContent.forEach((content) => {
