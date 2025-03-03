@@ -313,22 +313,6 @@
   margin-block-start: calc(30px / 2);
 }
 
-.l-yesno__list {
-  inline-size: calc(312 / var(--base-width) * 100%);
-}
-
-.l-yesno__list-illust {
-  margin: 10px auto 3.5px;
-}
-
-.l-yesno__list-illust--man {
-  inline-size: calc((174 / 312) * 100%);
-}
-
-.l-yesno__list-illust--woman {
-  inline-size: calc((156 / 312) * 100%);
-}
-
 .l-iryo-detail {
   display: none;
 }
@@ -393,7 +377,7 @@
 }
 
 .l-detail-content__outer--no {
-  margin-block-end: 20px;
+  margin-block-end: 10px;
 }
 
 .l-detail-content__inner {
@@ -1510,6 +1494,10 @@
 
   .l-gan-data__person-rate {
     font-size: calc(42 * var(--rem-ratio));
+  }
+
+  .l-support__col-term {
+    inline-size: 87px;
   }
 
   .l-money__figure-track-arrow-elm {

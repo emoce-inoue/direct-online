@@ -552,26 +552,26 @@
             <div class="c-section-heading__arrow"></div>
           </div>
           <ul class="l-yesno">
-            <li class="l-yesno__list">
-              <div class="c-detail-button c-detail-button--iryo js-scroll-in" data-target="yes">
+            <li class="c-yesno__list c-yesno__list--open js-trigger" data-target="yes">
+              <div class="c-detail-button c-detail-button--iryo js-scroll-in">
                 <div class="c-detail-button__box">
                   <p class="c-detail-button__box-text">医療保険あり</p>
                 </div>
               </div>
-              <div class="l-yesno__list-illust l-yesno__list-illust--man js-scroll-in">
+              <div class="c-yesno__list-illust c-yesno__list-illust--man js-scroll-in">
                 <picture>
                   <source srcset="images/webp/illust_iryo_man.webp" type="image/webp" width="198" height="272" />
                   <img src="images/illust_iryo_man.png" alt="医療保険あり男性イラスト" width="198" height="272" loading="lazy" />
                 </picture>
               </div>
             </li>
-            <li class="l-yesno__list">
-              <div class="c-detail-button c-detail-button--iryo js-scroll-in" data-target="no">
+            <li class="c-yesno__list js-trigger" data-target="no">
+              <div class="c-detail-button c-detail-button--iryo js-scroll-in">
                 <div class="c-detail-button__box">
                   <p class="c-detail-button__box-text">医療保険なし</p>
                 </div>
               </div>
-              <div class="l-yesno__list-illust l-yesno__list-illust--woman js-scroll-in">
+              <div class="c-yesno__list-illust c-yesno__list-illust--woman js-scroll-in">
                 <picture>
                   <source srcset="images/webp/illust_iryo_woman.webp" type="image/webp" width="195" height="243" />
                   <img src="images/illust_iryo_woman.png" alt="医療保険なし女性イラスト" width="195" height="243" loading="lazy" />
@@ -579,7 +579,7 @@
               </div>
             </li>
           </ul>
-          <div class="l-detail-content l-iryo-detail" data-content="yes">
+          <div class="l-detail-content l-iryo-detail l-iryo-detail--open" data-content="yes">
             <div class="l-detail-content__arrow l-detail-content__arrow--left"></div>
             <div class="l-detail-content__outer">
               <div class="l-detail-content__inner">
@@ -611,9 +611,11 @@
                     </p>
                   </div>
                 </div>
-                <p class="c-detail-attention c-detail-attention--right js-scroll-in">
+                <p class="c-detail-attention js-scroll-in">
+                 <span class="c-detail-attention__inner c-detail-attention__inner--right">
                   厚生労働省令和5年｢退院患者の平均在院日数等｣より<br />
                   (一般病床)
+                </span> 
                 </p>
                 <div class="c-detail-arrow js-scroll-in">
                   <picture>
@@ -734,7 +736,9 @@
                     </p>
                   </div>
                 </div>
-                <p class="c-detail-attention js-scroll-in">生命保険文化センター｢令和4年度 生活保障に関する調査」よりFAにて算出※1</p>
+                <p class="c-detail-attention js-scroll-in">
+                  <span class="c-detail-attention__inner">生命保険文化センター｢令和4年度 生活保障に関する調査」よりFAにて算出※1</span>
+                </p>
                 <div class="l-iryo-detail__banner js-scroll-in">
                   平均入院日数は短期化<br />
                   <div class="l-iryo-detail__banner-number">
@@ -747,12 +751,16 @@
                     <div class="l-iryo-detail__banner-number-col l-iryo-detail__banner-number-col--right"> <span class="l-iryo-detail__banner-number-color font-roboto">16.2</span>日</div>
                   </div>
                 </div>
-                <p class="c-detail-attention js-scroll-in">厚生労働省｢平成12年、令和4年医療施設(動態)調査・病院報告の概要｣より(一般病床の場合)</p>
+                <p class="c-detail-attention js-scroll-in">
+                  <span class="c-detail-attention__inner">厚生労働省｢平成12年、令和4年医療施設(動態)調査・病院報告の概要｣より(一般病床の場合)</span>
+                </p>
                 <div class="l-iryo-detail__banner js-scroll-in">
                   1入院あたりの自己負担費用<br />
                   平均<span class="l-iryo-detail__banner-strong">19.8</span>万円
                 </div>
-                <p class="c-detail-attention js-scroll-in">生命保険文化センター｢令和4年度 生活保障に関する調査｣よりFAにて算出※1</p>
+                <p class="c-detail-attention js-scroll-in">
+                  <span class="c-detail-attention__inner">生命保険文化センター｢令和4年度 生活保障に関する調査｣よりFAにて算出※1</span>
+                </p>
                 <div class="c-detail-arrow c-detail-arrow--no js-scroll-in">
                   <picture>
                     <source srcset="images/webp/icon_arrow_blue.webp" type="image/webp" width="320" height="70" />
@@ -843,7 +851,9 @@
                 </ul>
               </div>
             </div>
-            <p class="c-detail-attention js-scroll-in">※1 調査には、治療費・食事代・差額ベッド代に加え、交通費（見舞いに来る家族の交通費を含む）や衣類、日用品などを含む。高額療養費制度を利用した場合は利用後の金額</p>
+            <p class="c-detail-attention js-scroll-in">
+              <span class="c-detail-attention__inner">※1 調査には、治療費・食事代・差額ベッド代に加え、交通費（見舞いに来る家族の交通費を含む）や衣類、日用品などを含む。高額療養費制度を利用した場合は利用後の金額</span>
+            </p>
           </div>
         </section>
         <!-- 社内確認が取れ次第、ページに反映する -->
@@ -909,7 +919,9 @@
                       <p class="l-gan-data__person-rate l-gan-data__person-rate--woman"><span class="font-roboto">51.2</span><span class="l-gan-data__person-rate-value">%</span></p>
                     </div>
                   </div>
-                  <p class="c-detail-attention js-scroll-in">(公財)がん研究振興財団｢がんの統計2023｣年齢階級別罹患リスク(2019年罹患・死亡データに基づく)全がん</p>
+                  <p class="c-detail-attention js-scroll-in">
+                    <span class="c-detail-attention__inner">(公財)がん研究振興財団｢がんの統計2023｣年齢階級別罹患リスク(2019年罹患・死亡データに基づく)全がん</span>
+                  </p>
                 </div>
                 <p class="c-detail__heading js-scroll-in">がんの治療方法は<span class="c-detail__heading-strong">多様化</span></p>
                 <div class="l-gan-howto js-scroll-in">
@@ -1005,7 +1017,9 @@
                     </div>
                   </div>
                 </div>
-                <p class="c-detail-attention js-scroll-in">＊ご案内する商品によって繰り返しもらえる回数や受取期間は異なります。申込みの際にご確認ください。</p>
+                <p class="c-detail-attention js-scroll-in">
+                  <span class="c-detail-attention__inner">＊ご案内する商品によって繰り返しもらえる回数や受取期間は異なります。申込みの際にご確認ください。</span>
+                </p>
                 <div class="l-gan-tsuin">
                   <p class="l-gan__tsuin-heading js-scroll-in">さらに</p>
                   <div class="l-gan-tsuin__inner">
@@ -1038,7 +1052,9 @@
                           <div class="l-line-graph__rate-line l-line-graph__rate-line--line7"></div>
                         </div>
                       </div>
-                      <p class="c-detail-attention c-detail-attention--line-graph">社会医療診療行為別統計(各年6月審査分)</p>
+                      <p class="c-detail-attention c-detail-attention--line-graph">
+                        <span class="c-detail-attention__inner">社会医療診療行為別統計(各年6月審査分)</span>
+                      </p>
                     </div>
                     <div class="c-detail-arrow js-scroll-in">
                       <picture>
@@ -1057,7 +1073,9 @@
                           <img src="images/graph_term.png" alt="治療の流れのグラフ" width="645" height="281" />
                         </picture>
                       </div>
-                      <p class="c-detail-attention js-scroll-in">＊ご案内する商品・プランによって繰り返しもらえる回数や金額、対象となる治療方法が異なります。申込みの際にご確認ください。</p>
+                      <p class="c-detail-attention js-scroll-in">
+                        <span class="c-detail-attention__inner">＊ご案内する商品・プランによって繰り返しもらえる回数や金額、対象となる治療方法が異なります。申込みの際にご確認ください。</span>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1111,14 +1129,14 @@
             </picture>
           </div>
         </a>
-        <a href="tel:0120-844-628" class="l-footer__tel">
+        <a href="tel:0120-907-037" class="l-footer__tel">
           <div class="l-footer__tel-icon">
             <picture>
               <source srcset="images/webp/icon_telphone.webp" type="image/webp" width="37" height="49" />
               <img src="images/icon_telphone.png" alt="電話アイコン" width="37" height="49" loading="lazy" />
             </picture>
           </div>
-          <p class="l-footer__tel-number">0120-844-628</p>
+          <p class="l-footer__tel-number">0120-907-037</p>
         </a>
         <p class="l-footer__time">営業時間10:00〜19:30</p>
         <div class="l-footer__company-info">
