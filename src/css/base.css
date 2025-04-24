@@ -14,7 +14,6 @@
   font-weight: var(--font-bold);
   font-feature-settings: 'pkna';
   text-align: start;
-  letter-spacing: var(--tracking-normal);
   line-height: var(--leading-normal);
   text-spacing-trim: trim-start;
   word-break: initial;

@@ -14,10 +14,8 @@ const windowValues = {
 
 const triggerStickyButton = () => {
   const stickyBtn = document.querySelector('.l-sticky-button');
-  const startContent = document.querySelector('.l-iryo-hoken');
-  const startTop = startContent.getBoundingClientRect().top + windowValues.winTop;
 
-  if (startTop <= windowValues.winTop + (windowValues.winH * 4) / 6) {
+  if (window.scrollY > 0) {
     stickyBtn.classList.add('l-sticky-button--show');
   } else {
     stickyBtn.classList.remove('l-sticky-button--show');
@@ -112,9 +110,20 @@ const toggleYesNoContent = () => {
   });
 };
 
+const toggleGanHoken = () => {
+  const ganBtn = document.querySelector('.c-gan-hoken__button');
+  const ganContent = document.querySelector('.l-gan-hoken__detail');
+
+  ganBtn.addEventListener('click', () => {
+    ganContent.classList.toggle('l-gan-hoken__detail--open');
+    ganBtn.classList.toggle('c-gan-hoken__button--open');
+  });
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   triggerModal();
   toggleYesNoContent();
+  toggleGanHoken();
   triggerStickyButton();
   setSlider();
 });

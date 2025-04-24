@@ -18,6 +18,7 @@
   --leading-normal: 1.7;
   --leading-relaxed: 1.8;
   --leading-loose: 2;
+  --tracking-negative-super-tight: -0.15em;
   --tracking-negative-normal: -0.05em;
   --tracking-negative-loose: -0.03em;
   --tracking-negative-relaxed: -0.02em;
@@ -56,7 +57,9 @@
   --color-grayscale-1000: #000;
   --color-pinkscale-500: #e72c84;
   --color-bluescale-0: #daefff;
+  --color-bluescale-5: #e9f9ff;
   --color-bluescale-10: #d2e2e6;
+  --color-bluescale-15: #d1f1fe;
   --color-bluescale-20: #acdff2;
   --color-bluescale-30: #6fd8ff;
   --color-bluescale-35: #6ad6ff;
@@ -77,8 +80,10 @@
   --background-hero: linear-gradient(0deg, var(--background-base), var(--color-grayscale-50));
   --background-pop: linear-gradient(135deg, var(--color-bluescale-75), var(--color-bluescale-60) 50%, var(--color-bluescale-30));
   --background-gray: var(--color-grayscale-50);
+  --background-tsuin: var(--color-bluescale-5);
   --background-modal: rgb(0 0 0 / 25%);
   --background-modal-profile: var(--color-grayscale-40);
+  --background-banner: var(--color-bluescale-15);
   --font-white: var(--color-grayscale-0);
   --font-gray: var(--color-grayscale-800);
   --font-pink: var(--color-pinkscale-500);
@@ -97,7 +102,7 @@
   --blue-line: var(--color-bluescale-75);
   --blue-graph-small: var(--color-bluescale-20);
   --blue-graph-medium: var(--color-bluescale-50);
-  --blue-graph-large: var(--color-bluescale-65);
+  --blue-graph-large: var(--color-bluescale-70);
   --blue-text-shadow: var(--color-bluescale-55);
   --blue-shine-shadow: var(--color-bluescale-90);
   --blue-button-shadow: 1px 1px 0 var(--blue-text-shadow), -1px 1px 0 var(--blue-text-shadow), 1px -1px 0 var(--blue-text-shadow), -1px -1px 0 var(--blue-text-shadow), 1px 0 0 var(--blue-text-shadow), 0 1px 0 var(--blue-text-shadow), -1px 0 0 var(--blue-text-shadow), 0 -1px 0 var(--blue-text-shadow);
