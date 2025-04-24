@@ -930,6 +930,7 @@
 }
 
 .l-gan-howto__list-image {
+  display: block;
   inline-size: calc(150 / var(--inner-width) * 100%);
 }
 
