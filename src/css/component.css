@@ -197,7 +197,7 @@
   inset-block-start: 0;
   inset-inline-start: calc(18 / var(--inner-width) * 100%);
   inline-size: calc(103 / var(--inner-width) * 100%);
-  margin-block-start: calc(-15 / var(--inner-width) * 100%);
+  margin-block-start: calc(-20 / var(--inner-width) * 100%);
   opacity: 0;
   scale: 0.85;
 }
