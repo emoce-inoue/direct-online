@@ -772,13 +772,14 @@ summary::-webkit-details-marker {
   opacity: 0;
 }
 
-.l-circle-chart__segment.is-inview .l-circle-chart__segment-element {
+.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--no {
   opacity: 1;
   filter: drop-shadow(var(--black-graph-shadow));
   transition: opacity 0.5s ease 0.2s, filter .85s ease-out 1.3s;
 }
 
-.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--gan {
+.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--yes, .l-circle-chart__segment.is-inview .l-circle-chart__segment-element--gan {
+  opacity: 1;
   filter: none;
   box-shadow: var(--black-graph-shadow);
   transition: opacity 0.5s ease 0.2s, box-shadow 0.85s ease-out 1.9s;
