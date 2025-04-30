@@ -775,14 +775,19 @@ summary::-webkit-details-marker {
 .l-circle-chart__segment.is-inview .l-circle-chart__segment-element--no {
   opacity: 1;
   filter: drop-shadow(var(--black-graph-shadow));
-  transition: opacity 0.5s ease 0.2s, filter .85s ease-out 1.3s;
+  transition:
+    opacity 0.5s ease 0.2s,
+    filter 0.85s ease-out 1.3s;
 }
 
-.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--yes, .l-circle-chart__segment.is-inview .l-circle-chart__segment-element--gan {
+.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--yes,
+.l-circle-chart__segment.is-inview .l-circle-chart__segment-element--gan {
   opacity: 1;
   filter: none;
   box-shadow: var(--black-graph-shadow);
-  transition: opacity 0.5s ease 0.2s, box-shadow 0.85s ease-out 1.9s;
+  transition:
+    opacity 0.5s ease 0.2s,
+    box-shadow 0.85s ease-out 1.9s;
 }
 
 .l-circle-chart__segment-element-svg {
@@ -867,7 +872,7 @@ summary::-webkit-details-marker {
 
 .l-circle-chart__segment-element-animate--gan-large {
   stroke-dashoffset: 100.53;
-  transition: stroke-dashoffset .85s linear 0.3s;
+  transition: stroke-dashoffset 0.85s linear 0.3s;
 }
 
 .l-circle-chart__segment.is-inview .l-circle-chart__segment-element-animate--gan-large {
@@ -878,7 +883,7 @@ summary::-webkit-details-marker {
   stroke-dashoffset: 100.35;
   opacity: 0;
   transition:
-    stroke-dashoffset .85s ease-out 1.15s,
+    stroke-dashoffset 0.85s ease-out 1.15s,
     opacity 0.5s ease-out 1.15s;
 }
 
