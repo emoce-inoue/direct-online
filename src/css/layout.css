@@ -22,14 +22,14 @@
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
-  padding-block: calc(30px / 2);
-  padding-inline-start: calc(30px / 2);
+  padding-block: 15px;
+  padding-inline-start: 15px;
   background-color: var(--background-base);
 }
 
 .l-header__logo {
   display: block;
-  inline-size: min(calc(272px / 2), calc(272px * 1.5 / 2));
+  inline-size: 136px;
 }
 
 .l-sticky-button {
@@ -37,7 +37,7 @@
   position: fixed;
   inset-inline-end: calc(24 / var(--base-width) * 100%);
   inset-block-start: 0;
-  inline-size: min(calc(230 / var(--base-width) * 100%), calc(230px * 1.5 / 2));
+  inline-size: min(calc(230 / var(--base-width) * 100%), 172.5px);
   margin-block-start: calc(130 / var(--base-width) * 100%);
   border: 2.5px solid var(--blue-borderline);
   border-radius: var(--rounded-full);
@@ -102,7 +102,7 @@
   content: '';
   z-index: var(--default-z-index);
   position: absolute;
-  inset-block-start: calc(45px / 2);
+  inset-block-start: 22.5px;
   inset-inline: 0;
   inline-size: 100%;
   block-size: 1px;
@@ -149,7 +149,7 @@
 
 .l-hero {
   position: relative;
-  padding-block: calc(52px / 2) 8px;
+  padding-block: 26px 8px;
 }
 
 .l-hero__title {
@@ -300,7 +300,7 @@
 }
 
 .l-iryo-hoken {
-  padding-block: calc(100px / 2) calc(80px / 2);
+  padding-block: 50px 40px;
   background-color: var(--background-gray);
 }
 
@@ -308,7 +308,7 @@
   display: flex;
   justify-content: center;
   gap: calc(30 / var(--base-width) * 100%);
-  margin-block: calc(30px / 2);
+  margin-block: 15px;
 }
 
 .l-iryo-detail {
@@ -379,7 +379,7 @@
 }
 
 .l-detail-content__inner {
-  padding-block-start: calc(68px / 2);
+  padding-block-start: 34px;
   background-color: var(--background-base);
   border-radius: var(--rounded-9);
 }
@@ -947,7 +947,7 @@
 }
 
 .l-gan-hoken__circle-chart {
-  margin-block-end: calc(84px / 2);
+  margin-block-end: 42px;
 }
 
 .l-money {
@@ -1044,7 +1044,7 @@
 .l-gan-tsuin {
   position: relative;
   margin-block-start: calc(75 / var(--inner-width) * 100%);
-  padding-block-end: calc(50px / 2);
+  padding-block-end: 25px;
   background-color: var(--background-tsuin);
   border-bottom-left-radius: var(--rounded-sl);
   border-bottom-right-radius: var(--rounded-sl);
@@ -1141,13 +1141,13 @@
 .l-footer {
   z-index: var(--default-z-index);
   position: relative;
-  padding-block: calc(96px / 2) calc(66px / 2);
+  padding-block: 48px 33px;
   background-color: var(--blue-borderline);
 }
 
 .l-footer__link {
   display: block;
-  inline-size: min(calc(600 / var(--base-width) * 100%), calc(600px / 2));
+  inline-size: min(calc(600 / var(--base-width) * 100%), 300px);
   margin: auto;
   padding-block: 10px;
   background-color: var(--background-base);
@@ -1239,7 +1239,7 @@
 
 .l-modal__inner {
   position: relative;
-  inline-size: min(calc(670 / var(--base-width) * 100%), calc(670px * 1.5 / 2));
+  inline-size: min(calc(670 / var(--base-width) * 100%), 503px);
   padding: 1px;
   background-image: var(--blue-gradation);
   border-radius: var(--rounded-5);
@@ -1346,14 +1346,18 @@
 
 @media screen and (min-width: 768px) {
   .l-wrapper {
-    inline-size: calc(750px * 1.5 / 2);
+    inline-size: 562.5px;
     margin: auto;
   }
 
   .l-header {
     inset-inline: 0;
-    inline-size: calc(750px * 1.5 / 2);
+    inline-size: 562.5px;
     margin: auto;
+  }
+
+  .l-header__logo {
+    inline-size: 204px;
   }
 
   .l-sticky-button {
