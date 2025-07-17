@@ -76,8 +76,7 @@
   --color-bluescale-100: #076fa9;
   --color-bluescale-200: #002769;
   --background-base: var(--color-grayscale-0);
-  --background-main: repeating-linear-gradient(-45deg, var(--color-yellowscale-200), var(--color-yellowscale-200) 5px, var(--color-yellowscale-100) 5px, var(--color-yellowscale-100) 10px);
-  --background-hero: linear-gradient(0deg, var(--background-base), var(--color-grayscale-50));
+  --background-hero: linear-gradient(0deg, var(--background-base), var(--color-bluescale-0));
   --background-pop: linear-gradient(135deg, var(--color-bluescale-75), var(--color-bluescale-60) 50%, var(--color-bluescale-30));
   --background-gray: var(--color-grayscale-50);
   --background-tsuin: var(--color-bluescale-5);
